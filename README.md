@@ -17,7 +17,13 @@
 Le backend a été crée avec **Node.js**, **Express.js** et **MongoDB** comme base de données.
 <br />
 
-### Installation
+### Backend
+
+Télécharger les fichiers du github et placer les dans un server web à la racine.
+
+
+# Installation Backend
+
 
 - Dans le terminal de VSCODE, situez-vous dans le dossier `/backend`.
   <br />
@@ -25,12 +31,12 @@ Le backend a été crée avec **Node.js**, **Express.js** et **MongoDB** comme b
   <br />
 - Dans le fichier `.env`, veuillez rentrer le host, les identifiants de votre utilisateur admin et le nom de la base de données que vous souhaitez créer.
   <br />
-
+ 
 ### Development server
 
-Démarrer `nodemon server` pour avoir accès au serveur de développement. L'application va se recharger automatiquement si vous modifiez un fichier source.
+Démarrer `npm start`  ou `nodemon server` pour avoir accès au serveur de développement. L'application va se recharger automatiquement si vous modifiez un fichier source.
 
-# Frontend
+#  Frontend
 
 Le frontend a été crée avec React.js
 
