@@ -1,0 +1,123 @@
+@import "./mixin";
+
+header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 114px;
+  box-shadow: 0 1px 8px #ddd;
+  background-color: rgb(255, 255, 255);
+  padding-bottom: 10px;
+
+  img {
+    justify-content: flex-start;
+    width: 350px;
+    min-width: 200px;
+    margin-left: 30px;
+  }
+  nav {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin-right: 31px;
+    .login {
+      margin-right: 20px;
+    }
+    .inscription {
+      margin-right: 22px;
+    }
+    .connexion {
+      background-color: $color-Primaire;
+      color: white;
+      font-size: 1.5em;
+      border-radius: 13px;
+
+      padding: 12px 20px;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    .deconnexion {
+      background-color: $color-Primaire;
+      color: white;
+      margin-right: 50px;
+      font-size: 1.5em;
+      border-radius: 13px;
+      padding: 12px 20px;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    img {
+      min-width: 251px;
+    }
+    nav {
+      margin-right: 15px;
+      .connexion {
+        padding: 7px 14px;
+        font-size: 20px;
+      }
+      .deconnexion {
+        font-size: 22px;
+        padding: 7px 20px;
+        width: 195px;
+        margin-right: 50px;
+      }
+    }
+  }
+}
+
+//between tablette and phone
+@media screen and (max-width: 768px) {
+  header {
+    img {
+      min-width: 251px;
+    }
+    nav {
+      margin-right: 15px;
+      .connexion {
+        padding: 7px 14px;
+        font-size: 20px;
+      }
+      .deconnexion {
+        font-size: 22px;
+        padding: 7px 20px;
+        width: 195px;
+        margin-right: 50px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 629px) {
+  header {
+    flex-direction: column;
+    margin: auto;
+    img {
+      width: 100%;
+      max-width: 332px;
+      min-width: 234px;
+      margin: auto;
+    }
+    nav {
+      padding: 5px;
+      justify-content: center;
+      .inscription {
+        margin-right: 0px;
+      }
+      .connexion {
+        font-size: 19px;
+        padding: 7px 20px;
+        width: 118px;
+      }
+
+      .deconnexion {
+        font-size: 22px;
+        padding: 7px 20px;
+        margin: auto -25px auto auto;
+        width: auto;
+      }
+    }
+  }
+}
