@@ -30,11 +30,11 @@ app.use((req, res, next) => {
 mongoose
   .connect(
     "mongodb+srv://" +
-      DB_USER +
+      process.env.DB_USER +
       ":" +
-      DB_PASSWORD +
+      process.env.DB_PASSWORD +
       "@cluster0.t7gkg.mongodb.net/" +
-      DB_NAME +
+      process.env.DB_NAME +
       "?retryWrites=true&w=majority"
   )
   .then(() => console.log("Connexion à MongoDB réussie !"))
