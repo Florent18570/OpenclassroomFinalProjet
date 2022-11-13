@@ -29,6 +29,7 @@ exports.signup = (req, res, next) => {
 
 exports.login = (req, res, next) => {
   console.log(req.body.email);
+  console.log(req.body.password);
   userSchema
     .findOne({ email: req.body.email })
     .then((user) => {

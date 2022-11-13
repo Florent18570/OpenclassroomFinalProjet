@@ -29,7 +29,13 @@ app.use((req, res, next) => {
 
 mongoose
   .connect(
-    "mongodb+srv://flo:flo@cluster0.t7gkg.mongodb.net/test?retryWrites=true&w=majority"
+    "mongodb+srv://" +
+      DB_USER +
+      ":" +
+      DB_PASSWORD +
+      "@cluster0.t7gkg.mongodb.net/" +
+      DB_NAME +
+      "?retryWrites=true&w=majority"
   )
   .then(() => console.log("Connexion à MongoDB réussie !"))
   .catch((e) => console.log("Connexion à MongoDB échouée !", e));

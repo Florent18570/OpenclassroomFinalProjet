@@ -87,7 +87,7 @@ exports.deleteposte = async (req, res, next) => {
   //Vérification que c'est bien le créateur du post ou un admin qui modifie le post
   if (
     req.body.administrateur == "true" ||
-    req.body.idPostUser == req.body.userId
+    req.body.idPostUser == req.auth.userId
   ) {
     try {
       const deleteposteId = await NewPostUser.findById(req.params.id);
@@ -116,7 +116,7 @@ exports.update = (req, res, next) => {
   //Vérification que c'est bien le créateur du post ou un admin qui modifie le post
   if (
     req.body.administrateur == "true" ||
-    req.body.idPostUser == req.body.userId
+    req.body.idPostUser == req.auth.userId
   ) {
     NewPostUser.updateOne(
       { _id: req.params.id },
