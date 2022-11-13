@@ -217,7 +217,7 @@ class NewPost extends React.Component {
                   onChange={this.handleChangeImage}
                 />
                 <img
-                  src={`http://localhost/projet7_final/backend/images/${this.state.image}`}
+                  src={`http://localhost/OpenclassroomFinalProjet/backend/images/${this.state.image}`}
                   alt=""
                 />
               </div>

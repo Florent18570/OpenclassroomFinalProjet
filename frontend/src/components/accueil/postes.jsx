@@ -331,7 +331,7 @@ const GetPost = () => {
                           id={"img" + item._id}
                           className="imgPost"
                           src={
-                            "http://localhost/projet7_final/backend/images/" +
+                            "http://localhost/OpenclassroomFinalProjet/backend/images/" +
                             item.image
                           }
                           alt="imagePost"
