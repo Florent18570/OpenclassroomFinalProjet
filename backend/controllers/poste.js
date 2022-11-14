@@ -95,10 +95,13 @@ exports.deleteposte = async (req, res, next) => {
 
       // delete file named 'sample.txt'
       if (deleteposteId.image) {
-        fs.unlink(`images/${deleteposteId.image}`, function (err) {
-          if (err) throw err;
-          // if no error, file has been deleted successfully
-        });
+        fs.unlink(
+          `../frontend/public/images/${deleteposteId.image}`,
+          function (err) {
+            if (err) throw err;
+            // if no error, file has been deleted successfully
+          }
+        );
       }
 
       response.status(201).json({ message: "suppression réussie" });

@@ -329,11 +329,9 @@ const GetPost = () => {
                       return (
                         <img
                           id={"img" + item._id}
+                          crossorigin="anonymous"
                           className="imgPost"
-                          src={
-                            "http://localhost/OpenclassroomFinalProjet/backend/images/" +
-                            item.image
-                          }
+                          src={"/images/" + item.image}
                           alt="imagePost"
                         />
                       );

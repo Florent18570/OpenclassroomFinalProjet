@@ -217,7 +217,8 @@ class NewPost extends React.Component {
                   onChange={this.handleChangeImage}
                 />
                 <img
-                  src={`http://localhost/OpenclassroomFinalProjet/backend/images/${this.state.image}`}
+                  crossorigin="anonymous"
+                  src={`/images/${this.state.image}`}
                   alt=""
                 />
               </div>
